@@ -1,0 +1,70 @@
+INSERT INTO Customer (first_name, last_name) VALUES ('Steve', 'Walker');
+INSERT INTO Customer (first_name, last_name) VALUES ('Rachel', 'Smith');
+
+INSERT INTO Room (name, capacity) VALUES ('Red', 9);
+INSERT INTO Room (name, capacity) VALUES ('Blue', 16);
+INSERT INTO Room (name, capacity) VALUES ('Green', 12);
+
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 1, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 1, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 1, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 2, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 2, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 2, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 3, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 3, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (1, 3, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 1, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 1, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 1, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 1, 4);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 2, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 2, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 2, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 2, 4);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 3, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 3, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 3, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 3, 4);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 4, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 4, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 4, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (2, 4, 4);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 1, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 1, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 1, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 2, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 2, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 2, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 3, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 3, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 3, 3);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 4, 1);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 4, 2);
+INSERT INTO Seat (room_id, row_number, seat_number) VALUES (3, 4, 3);
+
+INSERT INTO Movie (title, screening_time) VALUES ('Matrix', 130);
+INSERT INTO Movie (title, screening_time) VALUES ('Avatar', 150);
+INSERT INTO Movie (title, screening_time) VALUES ('Inception', 120);
+
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (1, 1, '2022-12-31 11:00');
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (1, 2, '2022-12-31 12:00');
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (2, 2, '2022-12-31 16:00');
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (2, 3, '2022-12-31 12:00');
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (3, 1, '2022-12-31 17:00');
+INSERT INTO Screening (movie_id, room_id, start_time) VALUES (3, 3, '2022-12-31 18:00');
+
+INSERT INTO Reservation (customer_id, screening_id, price, expiration_time) VALUES (1, 3, 125, '2022-12-31 15:45');
+INSERT INTO Reservation (customer_id, screening_id, price, expiration_time) VALUES (2, 1, 150, '2022-12-31 10:45');
+
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (10, 1);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (11, 1);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (12, 1);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (13, 1);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (14, 1);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (1, 2);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (4, 2);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (5, 2);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (7, 2);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (8, 2);
+INSERT INTO seat_reserved (seat_id, reservation_id) VALUES (9, 2);
